@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{8FFB629D-F513-41CE-95D2-7ECE97B6EEEC};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{0DBD983F-BD8F-4BD6-B08A-AD28457D35EF}</ProjectGuid>
+    <TemplateGuid>{b6f3ff35-79b2-4f25-a2fc-60a7cf61013b}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DynamsoftCamera</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>DynamsoftCamera</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="DynamsoftCameraSDKResource.bundle\.DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DynamsoftCameraSDK.linkwith.cs">
+      <DependentUpon>DynamsoftCameraSDK.a</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ObjcBindingCoreSource Include="Structs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ObjcBindingNativeLibrary Include="DynamsoftCameraSDK.a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="DynamsoftCameraSDKResource.bundle\auto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="DynamsoftCameraSDKResource.bundle\camera_position.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="DynamsoftCameraSDKResource.bundle\capture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="DynamsoftCameraSDKResource.bundle\capture_click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="DynamsoftCameraSDKResource.bundle\dcs_cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="DynamsoftCameraSDKResource.bundle\dcs_crop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="DynamsoftCameraSDKResource.bundle\dcs_Filter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="DynamsoftCameraSDKResource.bundle\dcs_filter_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="DynamsoftCameraSDKResource.bundle\dcs_filter_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="DynamsoftCameraSDKResource.bundle\dcs_filter_grey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="DynamsoftCameraSDKResource.bundle\dcs_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="DynamsoftCameraSDKResource.bundle\dcs_ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="DynamsoftCameraSDKResource.bundle\dcs_rotate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="DynamsoftCameraSDKResource.bundle\dcs_rotate_horizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="DynamsoftCameraSDKResource.bundle\dcs_rotate_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="DynamsoftCameraSDKResource.bundle\dcs_rotate_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="DynamsoftCameraSDKResource.bundle\dcs_rotate_vertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="DynamsoftCameraSDKResource.bundle\flash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="DynamsoftCameraSDKResource.bundle\off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="DynamsoftCameraSDKResource.bundle\on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="DynamsoftCameraSDKResource.bundle\selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="DynamsoftCameraSDKResource.bundle\Slidecircle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="DynamsoftCameraSDKResource.bundle\torch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="DynamsoftCameraSDKResource.bundle\unselected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
+</Project>
