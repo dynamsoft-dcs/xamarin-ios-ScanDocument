@@ -1,5 +1,24 @@
 # xamarin-ios-ScanDocument
 
-This sample shows how to convert DynamsoftCameraSDK framework into Xamain iOS library(using Xamarin binding)，and develop iOS mobile apps.
-1.'DynamsoftCamera':is the Xamarin binding project
-2.'ScanDocument':is the example of Xamarin iOS. 
+
+### Xamarin Dyanmsoft Camera SDK
+Version 2.0
+
+The repository aims to help developers build **iOS** barcode apps with Xamarin Dynamsoft Camera SDK.
+
+### License
+Get the [trial license](https://www.dynamsoft.com/CustomerPortal/Portal/Triallicense.aspx).
+
+### Contact Us
+<support@dynamsoft.com>
+
+### Environment
+* Visual Studio 2017
+
+### HowTo
+1. Import DynamsoftCamera.sln to **Visual Studio**.
+2. Build DynamsoftCamera projects to get the Xamarin Dynamsoft Camera SDK--**DynamsoftCamera.dll**.
+
+## Examples--ScanDocument
+   Build ScanDocument project to create the Xamarin iOS sample app.The project has already added the project ‘DynamsoftCamera' to References settings. 
+
